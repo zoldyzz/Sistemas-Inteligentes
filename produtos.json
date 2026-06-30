@@ -1,0 +1,23 @@
+[
+    {
+        "nome": "Notebook Dell",
+        "categoria": "Informática",
+        "quantidade": 12,
+        "minimo": 5,
+        "valor": 3500
+    },
+    {
+        "nome": "Mouse Gamer",
+        "categoria": "Periféricos",
+        "quantidade": 3,
+        "minimo": 10,
+        "valor": 120
+    },
+    {
+        "nome": "Fone Gamer",
+        "categoria": "Periféricos",
+        "quantidade": 6,
+        "minimo": 15,
+        "valor": 350
+    }
+]

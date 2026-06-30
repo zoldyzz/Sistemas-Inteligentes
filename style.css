@@ -1,0 +1,197 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+/* Cabeçalho */
+
+header{
+    background:#2c3e50;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+}
+
+header h1{
+    font-size:32px;
+}
+
+/* Conteúdo */
+
+main{
+    width:90%;
+    max-width:1300px;
+    margin:30px auto;
+}
+
+/* Cards */
+
+section{
+    background:#fff;
+    border-radius:12px;
+    padding:20px;
+    margin-bottom:25px;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+}
+
+section h2{
+    margin-bottom:18px;
+    color:#2c3e50;
+}
+
+/* Formulário */
+
+form{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+}
+
+form input{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    transition:.3s;
+}
+
+form input:focus{
+    border-color:#3498db;
+}
+
+form button{
+    background:#3498db;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    padding:12px;
+    font-size:16px;
+    transition:.3s;
+}
+
+form button:hover{
+    background:#2980b9;
+}
+
+/* Alertas */
+
+.alertas{
+    border-left:6px solid #f39c12;
+}
+
+#listaAlertas{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.alerta{
+    padding:12px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+.vermelho{
+    background:#ffe5e5;
+    color:#b30000;
+}
+
+.amarelo{
+    background:#fff5d6;
+    color:#9b6b00;
+}
+
+.verde{
+    background:#e5ffe7;
+    color:#008a2a;
+}
+
+/* Tabela */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+thead{
+    background:#2c3e50;
+    color:white;
+}
+
+th,
+td{
+    padding:12px;
+    text-align:center;
+    border:1px solid #ddd;
+}
+
+tbody tr:nth-child(even){
+    background:#f8f8f8;
+}
+
+tbody tr:hover{
+    background:#eef7ff;
+}
+
+/* Gráficos */
+
+.graficos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
+    gap:25px;
+}
+
+.grafico{
+    background:white;
+    border-radius:12px;
+    padding:15px;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+canvas{
+    width:100% !important;
+    height:350px !important;
+}
+
+/* Responsivo */
+
+@media(max-width:768px){
+
+    main{
+        width:95%;
+    }
+
+    form{
+        grid-template-columns:1fr;
+    }
+
+    .graficos{
+        grid-template-columns:1fr;
+    }
+
+    table{
+        font-size:14px;
+    }
+
+    th,
+    td{
+        padding:8px;
+    }
+
+    header h1{
+        font-size:26px;
+    }
+
+}

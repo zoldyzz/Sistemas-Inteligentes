@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estoque Inteligente</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>📦 Estoque Inteligente</h1>
+    </header>
+
+    <main>
+
+        <!-- Cadastro -->
+        <section class="cadastro">
+
+            <h2>Cadastrar Produto</h2>
+
+            <form id="formProduto">
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Nome do Produto"
+                    required>
+
+                <input
+                    type="text"
+                    id="categoria"
+                    placeholder="Categoria"
+                    required>
+
+                <input
+                    type="number"
+                    id="quantidade"
+                    placeholder="Quantidade"
+                    required>
+
+                <input
+                    type="number"
+                    id="minimo"
+                    placeholder="Estoque Mínimo"
+                    required>
+
+                <input
+                    type="number"
+                    id="valor"
+                    placeholder="Valor Unitário"
+                    step="0.01"
+                    required>
+
+                <button type="submit">
+                    Cadastrar
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Alertas -->
+
+        <section class="alertas">
+
+            <h2>Alertas Inteligentes</h2>
+
+            <div id="listaAlertas">
+
+                Nenhum alerta.
+
+            </div>
+
+        </section>
+
+        <!-- Tabela -->
+
+        <section class="tabela">
+
+            <h2>Produtos</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Produto</th>
+                        <th>Categoria</th>
+                        <th>Qtd</th>
+                        <th>Mínimo</th>
+                        <th>Valor</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="tbodyProdutos">
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+        <!-- Gráficos -->
+
+        <section class="graficos">
+
+            <div class="grafico">
+
+                <h2>Quantidade por Produto</h2>
+
+                <canvas id="graficoBarra"></canvas>
+
+            </div>
+
+            <div class="grafico">
+
+                <h2>Produtos por Categoria</h2>
+
+                <canvas id="graficoPizza"></canvas>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
